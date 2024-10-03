@@ -1,0 +1,215 @@
+header.nav{
+    text-align: right;
+}
+label {
+    position: relative;
+    left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 17.6vw;
+    height: 4vh;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+
+}
+header {
+    margin-inline-end: 0.5vw;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: #226f54ff;
+}
+
+
+h1 {
+    display: flex;
+    margin-inline-end: 0.5vw;
+    color: #f7f7f7;
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    flex-direction: column;
+}
+b{
+    align-items: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+    font-size: 0.85vw;
+    color: #226f54ff;
+    font-weight: normal;
+}
+p{
+    align-items: flex-end;
+    align-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-end;
+    margin-inline-start: 5%;
+    margin-inline-end: 1vw;
+    font-size: 1vw;
+}
+footer {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background: #226f54ff;
+
+}
+
+main {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    background-color: rgb(230, 230, 230);
+    justify-content: center;
+}
+h3{
+    display: flex;
+    font-size: x-large;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: auto;
+    height: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    color: #f7f7f7;
+    font-weight: bold;
+    position: sticky;
+    margin-inline-start: 2vw;
+    box-shadow: 20px 14px 10px rgba(0, 0, 0, 0.1);
+}
+.iniciosesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.contenedorlogin{
+    flex-direction: column;
+    display: flex;
+    border: 1px solid;
+    border-color: #222B26;
+    width: 20vw;
+    height: 45vh;
+    background: #85BDA6;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 5vh;
+}
+.contraseña{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.contenedorbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginbtn{
+    color: #f7f7f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 4vh;
+    width: 7vw;
+    background-color: #226F54;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2), 3px 3px #206950;
+    border: none;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    
+}
+.alerta{ 
+    color: red;
+    margin: 0;
+}
+.usuario {
+    height: 6vh;
+    width: 15vw;
+    margin-bottom: 13px;
+    outline: none;
+}
+.contraseña{
+    height: 6vh;
+    width: 15vw;
+    margin-bottom: 13px;
+    outline: none;
+}
+.loginbtn:hover {
+    background-color: #226F54;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2), 3px 3px #206950;
+}
+
+.loginbtn:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 2px 2px  #206950;
+    transform: translate(2px, 2px);
+}
+
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+@media (max-width: 800px) {
+    main {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: rgb(230, 230, 230);
+    }
+    .contenedorlogin{
+        height: 40vh;
+        width: 70vw;
+    }
+    .usuario {
+        height: 6vh;
+        width: 35vw;
+    }
+    .contraseña {
+        height: 6vh;
+        width: 35vw;
+    }
+    .loginbtn{
+        width: 27vw;
+        height: 3vh;
+    }  
+    header{
+        justify-content: center;
+    }   
+    h1{
+        font-size: 1rem;
+    }
+    .alerta{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../Proyecto/css/normalize.css">       
+    <link rel="stylesheet" href="../Proyecto/css/tareas/styletema.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de tareas</h1>
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+                <li><a href="archivo.html">Archivadas</a></li>
+                <li><a href="index.html">Crear nueva tarea</a></li>
+                <li><a href="../Proyecto/php/cerrarsesion.php">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <!-- este contenedor tiene las tareas y el selccionador  -->
+    <main>
+    <div class="contenedorambas">
+        <div class="contenedor-tareas">
+            <h3>TAREAS A REALIZAR</h3>
+            <div  id="divtareaspendientes">
+            </div>
+        </div>
+        <!-- este contenedor tiene las tareas hechas  -->
+        <div class="contenedor-tareashechas">
+            <h3>TAREAS REALIZADAS</h3>
+            <div id="divtareashechas">
+            </div>
+        </div>
+    </div>
+     
+    </main>
+    <footer>
+            <h2>Desarrollo IT</h2>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/lista.js"></script>
+</body>
+</html>

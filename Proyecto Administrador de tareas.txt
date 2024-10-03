@@ -1,0 +1,14 @@
+Proyecto: Administrador de tareas
+
+Posibles mejoras:
+
+-Tema Claro/Oscuro
+-Cartel de bienvenida
+-Cartel flotante al guardar tarea
+-Si no hay tareas mostrar un mensaje
+
+-Modos de Vista: (vista de lista, cuadrícula o calendario para gestionar tareas)
+-Recordatorios: Permite establecer recordatorios para tareas específicas.
+-Notificaciones: Envía notificaciones para próximas tareas o fechas límites
+-Notificar por otras apps
+-Etiquetas y Categorías (Ver como llevar a cabo)

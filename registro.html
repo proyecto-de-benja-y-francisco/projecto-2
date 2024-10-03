@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de tareas</title>
+    <link rel="stylesheet" href="../Proyecto/css/normalize.css">
+    <link rel="stylesheet" href="../Proyecto/css/login/styleregistro.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Gestion de tareas</h1>
+        <nav>
+        </nav>
+    </header> 
+    <main>
+        <div class="contenedorregistro">
+            <form id="iniciosesion" class="iniciosesion">
+                <div class="form-element">
+                    <input type="text" id="usuario" class="form" placeholder="Usuario" required>
+                </div>
+                <div class="form-element">
+                    <input type="email" id="email" class="form" placeholder="Correo electronico" required>
+                </div>
+                <div class="form-element">
+                    <input type="password" id="contraseña" class="form" placeholder="Contraseña" required> 
+                </div>
+                <div class="form-element">
+                    <input type="password" id="contraseñacomfirmar" class="form" placeholder="Comfirmar contraseña" required> 
+                </div>
+                <button type="button" id="registerbtn" class="registerbtn" >Registrar</button>   
+                <a href="login.html">Ya tengo una cuenta</a>          
+            </form>
+            <p id="result" class="alerta"></p>
+        </div>
+    </main>
+     <footer>
+        <b>Desarrollo IT</b>
+     </footer> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script src="./js/registro.js"></script>
+</body>
+</html>

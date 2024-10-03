@@ -1,0 +1,199 @@
+header.nav{
+    text-align: right;
+}
+label {
+    position: relative;
+    left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 17.6vw;
+    height: 4vh;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+
+}
+header {
+    margin-inline-end: 0.5vw;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: #226f54ff;
+}
+
+h1 {
+    display: flex;
+    margin-inline-end: 0.5vw;
+    color: #f7f7f7;
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    flex-direction: column;
+}
+b{
+    align-items: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+    font-size: 0.85vw;
+    color: #226f54ff;
+    font-weight: normal;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    color: #226f54ff;
+    font-size: medium;
+    font-weight: bold;
+    font-size: 1vw;
+    margin-inline-start: 1vw;
+}
+p{
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    margin-inline-start: 5%;
+    margin-inline-end: 1vw;
+    font-size: 0.8vw;
+    color: #226f54ff;
+
+}
+footer {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background: #226f54ff;
+
+}
+
+main {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    background-color: rgb(230, 230, 230);
+    justify-content: center;
+}
+h3{
+    display: flex;
+    font-size: x-large;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: auto;
+    height: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: solid;
+    color: #222B26;
+    font-weight: bold;
+    margin-inline-start: 2vw;
+}
+.iniciosesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedorregistro{
+    flex-direction: column;
+    display: flex;
+    border: 1px solid;
+    border-color: #222B26;
+    width: 20vw;
+    height: 45vh;
+    background: #85BDA6;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.from-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: #222B26;
+}
+.form{
+    background-color: whitesmoke;
+    outline: none;
+    height: 3vh;
+    width: 15vw;
+    margin-bottom: 13px;
+    border-radius: 40px;
+}
+.registerbtn{
+    height: 2vh;
+    width: 5vw;
+    background: #226f54ff;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2), 3px 3px #143312;
+    border: none;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.alerta{ 
+    color: red;
+    margin: 0;
+}
+.registerbtn:hover {
+    background: #226f54ff;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2), 3px 3px #065f0e;
+}
+
+.registerbtn:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 2px 2px  #065f0e;
+    transform: translate(2px, 2px);
+}
+
+@media (max-width: 800px) {
+    main {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(230, 230, 230);
+    }
+    .contenedorregistro{
+        height: 60vh;
+        width: 75vw;
+    }
+    .form {
+        height: 4vh;
+        width: 48vw;
+    }
+    .registerbtn{
+        width: 27vw;
+        height: 3vh;
+    }
+    header{
+        justify-content: center;
+    }   
+    h1{
+        font-size: 1rem;
+    }
+    a{
+        font-size: 1.2rem;
+        height: 5vh;
+    }
+    .alerta{
+        font-size: 1rem;
+    }
+}

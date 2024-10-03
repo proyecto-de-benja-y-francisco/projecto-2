@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de tareas</title>
+    <link rel="stylesheet" href="../Proyecto/css/normalize.css">
+    <link rel="stylesheet" href="../Proyecto/css/login/stylelogin.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Gestion de tareas</h1>
+        <nav>
+        </nav>
+    </header> 
+    <main>
+        <div class="contenedorlogin">
+            <form id="iniciosesion" class="iniciosesion">
+                <div class="usuario">
+                    <input type="text" id="usuario" class="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="contraseña">
+                    <input type="password" id="contraseña" class="contraseña" placeholder="Contraseña" required> 
+                </div>
+                <div class="contenedorbtn">
+                    <button type="button" id="loginbtn" class="loginbtn" onclick="iniciarsesion()" >Login</button>
+                    <a href="registro.html">Crear cuenta</a> 
+                </div>
+            </form>
+            <p id="result" class="alerta"></p>
+        </div>
+    </main>
+     <footer>
+        <b>Desarrollo IT</b>
+     </footer>   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Proyecto/css/normalize.css">
+    <link rel="stylesheet" href="../Proyecto/css/tareas/stylearchivo.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de tareas</h1>
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+                <li><a href="listadetareas.html">Lista de tareas</a></li>
+                <li><a href="index.html">Crear nueva tarea</a></li>
+                <li><a href="../Proyecto/php/cerrarsesion.php">Cerrar sesion</a></li>
+            </ul>
+    </header>
+    <main>
+            <div class="contenedor-archivos">
+                <div class="buscarcontenedor">
+                    <input type="text" class="buscador" id="busqueda" placeholder="Buscar...">
+                    <button class="buscarboton" id="buscarbtn" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M23 21l-5.746-5.747A8.96 8.96 0 0020 10c0-4.969-4.031-9-9-9S2 5.031 2 10s4.031 9 9 9c2.028 0 3.914-.688 5.39-1.846L21 23l2-2zm-11-5c-4.135 0-7.5-3.365-7.5-7.5S7.865 1 12 1s7.5 3.365 7.5 7.5S16.135 16 12 16z"/>
+                        </svg>
+                    </button>
+                    <form id="filtros">
+                        <select id="select" name="ordenar" class="selector">
+                            <option value="nombre_asc">Nombre (A-Z)</option>
+                            <option value="nombre_desc">Nombre (Z-A)</option>
+                            <option value="fecha_reciente">Fecha (Más reciente primero)</option>
+                            <option value="fecha_antigua">Fecha (Más antigua primero)</option>
+                            <option value="importancia_alta">Importancia (Mayor a menor)</option>
+                            <option value="importancia_baja">Importancia (Menor a mayor)</option>
+                        </select>
+                        <button type="submit" class="ordenar">Ordenar</button>
+                    </form>                
+                </div>
+                <div class="archivos" id="divarchivo">
+                </div>           
+            </div>
+    </main>
+    <footer>
+        <b>Desarrollo IT</b>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/lista.js"></script>
+    <script src="./js/lupa.js"></script>
+    <script src="./js/filtros.js"></script>
+</body>
+</html>

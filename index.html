@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="../Proyecto/css/normalize.css">
+    <link rel="stylesheet" href="../Proyecto/css/tareas/styleagregartareas.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de tareas</h1>
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+                <li><a href="listadetareas.html">Lista de tareas</a></li>
+                <li><a href="archivo.html">Archivadas</a></li>
+                <li><a href="../Proyecto/php/cerrarsesion.php">Cerrar sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+         <div class="agregar-tareas">
+             <form action="" id="form-tarea">
+                <input type="text" class="tarea" id="inttarea" placeholder="Titulo de la tarea la tarea" maxlength="30">
+                <textarea name="tarea" id="txttarea" placeholder="Describe la tarea" class="escribirtareas"></textarea>
+                <input type="text" class="pcname" id="intpc" placeholder="Nombre PC (si es necesario)" maxlength="20">
+                <select name="importacia" id="importancia" class="importacia">
+                    <option value="alta">Alta (lo mas pronto posible)</option>
+                    <option value="media">Media (realizar en un corto periodo de tiempo)</option>
+                    <option value="baja">Baja (cuando se pueda)</option>
+                </select>
+                  <div class="botones">                    
+                    <button  class="guardar" id="btnguardar"  >Guardar</button>
+                    <button class="cancelar" type="submit" id="btncancelar" onclick="cancelar()">Cancelar</button>
+                </div> 
+                </form>            
+            </div>     
+                <div id="myModal" class="cartel">
+                  <div class="cartel-content">
+                    <span class="close">&times;</span>
+                    <p>Tarea guardada correctamente</p>
+                  </div> 
+                </div>               
+            </main>
+            <footer>
+                <b>Desarrollo IT</b>
+            </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../Proyecto/js/app.js"></script>
+</body>
+</html>
